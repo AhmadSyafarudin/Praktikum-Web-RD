@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+}
+
+header {
+    background-image: linear-gradient(green, white);
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    justify-items: center;
+}
+
+header img {
+    width: 7%;
+    margin: auto 30px;
+}
+
+.itera {
+    padding: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: 31pt;
+}
+
+h2 {
+    font-size: 11pt;
+}
+
+nav {
+    background-color: green;
+    text-align: center;
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: tahoma;
+    font-size: 11pt;
+    margin: 0 25px;
+    color: white;
+}
+
+.body {
+    display: flex;
+}
+
+.main {
+    display: flex;
+    width: 90%;
+    margin: 0;
+    background-color: lightgray;
+    padding: 85px 0px 60px 15px;
+}
+
+.main img {
+    width: 200px;
+    height: 260px;
+    border-radius: 10px;
+}
+
+.content {
+    margin-left: 25px;
+    justify-content: center;
+    justify-items: center;
+    font-family: verdana;
+    font-size: 11pt;
+}
+
+.bio {
+    margin-left: 20px;
+    font-family: Verdana;
+    font-size: 11pt;
+}
+
+.side {
+    background-color: #6AB6DA;
+    width: 30%;
+    padding: 30px;
+}
+
+.side a {
+    text-decoration: none;
+    color: white;
+}
+
+.b1 img, .b2 img, .b3 img {
+    width: 50%;
+}
+
+footer {
+    background-color: #BE9F45;
+    text-align: center;
+    color: white;
+    font-family: Tahoma;
+    font-size: 11pt;
+    padding: 5px;
+}
