@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <label for="tema">Pilih Tema </label>
+    <select id="tema" onchange="getTheme()">
+        <option value="putih">Putih</option>
+        <option value="hitam">Hitam</option>
+    </select>
+
+    <h1>Selamat Datang!</h1>
+
+    <label for="mobil">Pilih Mobil Anda </label>
+    <select id="mobil" onchange="getCar()">
+        <option value="">--Pilih Mobil--</option>
+        <option value="Avanza">Avanza</option>
+        <option value="Pajero">Pajero</option>
+        <option value="Kijang">Kijang</option>
+    </select>
+
+    <p id="ket"></p>
+
+    <label for="angka">Masukkan Angka </label>
+    <input type="number" id="angka">
+    <input type="submit" value="Get Factorial" onclick="getFactorial()">
+    <p id="hasil"></p>
+
+    <script>
+        function getTheme() {
+            var tema = document.getElementById("tema").value;
+
+            if (tema == "hitam") {
+                document.body.style.backgroundColor = "black";
+                document.body.style.color = "white";
+            }
+            else {
+                document.body.style.backgroundColor = "white";
+                document.body.style.color = "black";
+            }
+        }
+
+        function getCar() {
+            var car = document.getElementById("mobil").value;
+
+            if (car == "Avanza") {
+                document.getElementById("ket").innerText = "Mobil Sejuta Umat Bos";
+            }
+            else if (car == "Pajero") {
+                document.getElementById("ket").innerText = "Panas Jobo-Jero";
+            }
+            else {
+                document.getElementById("ket").innerText = "Meskipun Tua Urusan Tenaga Berani Adu";
+            }
+        }
+
+        function getFactorial() {
+            var angka = document.getElementById("angka").value;
+            var hasil = 1;
+
+            for (counter = angka; counter > 0; counter--) {
+                hasil *= counter
+            }
+
+            if (angka == 0 || angka < 0) {
+                document.getElementById("hasil").innerText = "Hasil Faktorial dari " + angka + " adalah 0";
+            }
+            else {
+                document.getElementById("hasil").innerText = "Hasil Faktorial dari " + angka + " adalah " + hasil;
+            }
+        }
+    </script>
+
+
+</body>
+</html>
