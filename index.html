@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Ajax</title>
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <form method="post" id="form_mahasiswa">
+        <label for="nim">NIM</label>
+        <input type="number" name="nim" id="nim">
+        
+        <label for="nama">Nama</label>
+        <input type="text" name="nama" id="nama">
+        
+        <label for="prodi">Prodi</label>
+        <select name="prodi" id="prodi">
+            <option value="IF">Teknik Informatika</option>
+            <option value="EL">Teknik Elektro</option>
+            <option value="SI">Teknik Sipil</option>
+            <option value="TG">Teknik Geofisika</option>
+            <option value="MA">Matematika</option>
+        </select>
+    </form>
+    <br>
+    <button id="btn_tampil">Tampilkan</button>
+    <hr>
+    <div id="tampil_data"></div>
+
+    <script>
+        $(document).ready(function(){
+            $('#tampil_data').load("tampil.php");
+            $('#btn_tampil').click(function(){
+                var data = $('#form_mahasiswa').serialize();
+                $.ajax({
+                    type: 'POST',
+                    url : 'aksi.php?action=tambah',
+                    data : data,
+                    success :function(data){
+                        alert(data);
+                        $('#tampil_data').load("tampil.php");
+                    }
+                });
+            });
+
+            $("#tampil_data").on("click", "#EditButton", function() {
+                var nim = $(this).attr("value");
+                $.ajax({
+                    type: 'GET',
+                    url: 'edit.php',
+                    data: {
+                        nim: nim
+                    },
+                    success: function(data) {
+                        $('#tampil_data').html(data);
+                    }
+                });
+            });
+
+            $("#tampil_data").on("submit", "#edit", function(e) {
+                e.preventDefault();
+                $.ajax({
+                    url: 'aksi.php?action=edit',
+                    type: 'post',
+                    data: $(this).serialize(),
+                    success: function(data) {
+                        alert(data);
+                        $('#tampil_data').load('tampil.php');
+                    }
+                });
+            });
+
+            $("#tampil_data").on("click", "#DeleteButton", function() {
+                var nim = $(this).attr("value");
+                $.ajax({
+                    url: 'aksi.php?action=delete',
+                    type: 'post',
+                    data: {
+                        nim: nim
+                    },
+                    success: function(data) {
+                        alert(data);
+                        $('#tampil_data').load('tampil.php');
+                    }
+                });
+            });
+        });
+    </script>   
+</body>
+</html>
