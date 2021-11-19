@@ -9,24 +9,69 @@
     <style>
         #print td {
             text-align: center;
+            padding: 15px;          
+        }
+
+        #list, #container {
+            display: flex;
+        }
+
+        #kolom1, #kolom2 {
+            justify-content: center;
             padding: 15px;
-            border: solid black 2px;
-            
+
+        }
+
+        h3 {
+            margin-left: 70px;
+        }
+
+        #print {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        
+        form {
+            padding: 10px;
+            background-color: lightblue;
+            margin-right: 77%;
         }
     </style>
 </head>
 <body>
+    
     <form action="" method="post">
+    <h3>Daftar Harga</h3>
+    <div id="list">
+        <div id="kolom1">
+            <ol>Mangga</ol>
+            <ol>Jambu</ol>
+            <ol>Salak</ol>
+        </div>
+        <div id="kolom2">
+            <p>Rp15.000</p>
+            <p>Rp13.000</p>
+            <p>Rp10.000</p>
+        </div>
+    </div>
+    <div id="container">
+        <div id="kolom1">
         <label for="mangga">Mangga</label>
-        <input type="number" name="mangga" id="mangga" value="0">
         <br>
         <label for="jambu">Jambu</label>
-        <input type="number" name="jambu" id="jambu" value="0">
         <br>
         <label for="salak">Salak</label>
+        </div>
+        <div id="kolom2">
+        <input type="number" name="mangga" id="mangga" value="0">
+        <br>
+        <input type="number" name="jambu" id="jambu" value="0">
+        <br>
         <input type="number" name="salak" id="salak" value="0">
         <br>
-        <input type="submit" name="submit" value="Bayar">
+        </div>
+    </div>
+        <input type="submit" name="submit" value="Bayar" style="margin-left: 95px;">
     </form>
 
     <div id="print"></div>
@@ -54,7 +99,7 @@
         var slk = "<tr><td>1. Jambu </td><td>"+jmlmangga+"</td><td>"+mangga+"</td></tr><tr><td>2. Jambu </td><td>"+jmljambu+"</td><td>"+jambu+"</td></tr>"; 
         var slk1 = "<tr><td>1. Salak </td><td>"+jmlsalak+"</td><td>"+salak;
         var all = "<tr><td>1. Jambu </td><td>"+jmlmangga+"</td><td>"+mangga+"</td></tr><tr><td>2. Jambu </td><td>"+jmljambu+"</td><td>"+jambu+"</td></tr><tr><td>3. Salak </td><td>"+jmlsalak+"</td><td style='padding-left : 50px'>"+salak+"</td></tr>";
-        var total = "<tr><td colspan='3'>------------------------------------</td></tr><tr><td>Total :</td><td colspan='2'>"+total+"</td></tr></table>"; 
+        var total = "<tr><td colspan='3'>------------------------------------</td></tr><tr><td>Total :</td><td colspan='2' style='padding-left  : 100px;'>"+total+"</td></tr></table>"; 
         
         if (mangga == 0 && jambu == 0 && salak ==0) {
             document.getElementById("print").innerHTML = "Ayo Belanja Sekarang";
