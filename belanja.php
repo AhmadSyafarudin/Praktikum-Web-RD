@@ -98,7 +98,7 @@
         var jmb1 = "><tr><td>1. Jambu </td><td>"+jmljambu+"</td><td>"+jambu;
         var slk = "<tr><td>1. Jambu </td><td>"+jmlmangga+"</td><td>"+mangga+"</td></tr><tr><td>2. Jambu </td><td>"+jmljambu+"</td><td>"+jambu+"</td></tr>"; 
         var slk1 = "<tr><td>1. Salak </td><td>"+jmlsalak+"</td><td>"+salak;
-        var all = "<tr><td>1. Jambu </td><td>"+jmlmangga+"</td><td>"+mangga+"</td></tr><tr><td>2. Jambu </td><td>"+jmljambu+"</td><td>"+jambu+"</td></tr><tr><td>3. Salak </td><td>"+jmlsalak+"</td><td style='padding-left : 50px'>"+salak+"</td></tr>";
+        var all = "<tr><td>1. Jambu </td><td>"+jmlmangga+"</td><td>"+mangga+"</td></tr><tr><td>2. Jambu </td><td>"+jmljambu+"</td><td>"+jambu+"</td></tr><tr><td>3. Salak </td><td>"+jmlsalak+"</td><td>"+salak+"</td></tr>";
         var total = "<tr><td colspan='3'>------------------------------------</td></tr><tr><td>Total :</td><td colspan='2' style='padding-left  : 100px;'>"+total+"</td></tr></table>"; 
         
         if (mangga == 0 && jambu == 0 && salak ==0) {
