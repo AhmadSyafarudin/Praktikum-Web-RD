@@ -1,0 +1,87 @@
+header {
+    background-color: #04AA6D;
+    color: white;
+    padding: 25px;
+    margin: 0;
+}
+
+body {
+    background-color:rgba(213, 213, 214, 0.712);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+
+#title {
+    display: inline;
+    font-style: italic;
+    font-size: 20pt;
+    font-family: monospace;
+}
+
+#daftar {
+    display: inline;
+    float: right;
+    text-decoration: none;
+    background-color:#333;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    font-size: 13pt;
+    font-family: Arial;
+    color: white;
+    border: 2pt solid white;
+    margin-top: -6px;
+
+}
+
+#daftar:hover {
+    background-color: teal;
+}
+
+.welcome {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('bg.jpg');
+    background-position:center top ;
+    color: white;
+    background-size: 100% 400px;
+    text-align: center;
+    padding: 80px;
+}
+
+.welcome hr {
+    height: 3px;
+    background-color: white;
+    width: 40%;
+    border-radius: 10px;
+}
+
+#gogo {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    border : 2pt solid white ;
+}
+
+#gogo:hover {
+    background-color: teal;
+}
+
+.webinar {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.webinar hr {
+    height: 3px;
+    background-color: black;
+    width: 40%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 20px auto;
+}

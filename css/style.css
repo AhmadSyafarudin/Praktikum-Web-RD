@@ -1,0 +1,183 @@
+header {
+    background-color: #04AA6D;
+    color: white;
+    padding: 25px;
+    margin: 0;
+}
+
+body {
+    background-color:rgba(213, 213, 214, 0.712);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+#title {
+    display: inline;
+    font-style: italic;
+    font-size: 20pt;
+    font-family: monospace;
+}
+
+#daftar {
+    display: inline;
+    float: right;
+    text-decoration: none;
+    background-color:#333;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    font-size: 13pt;
+    font-family: Arial;
+    color: white;
+    border: 2pt solid white;
+    margin-top: -6px;
+
+}
+
+#daftar:hover {
+    background-color: teal;
+}
+
+.welcome {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('bg.jpg');
+    background-position:center top ;
+    color: white;
+    background-size: 100% 400px;
+    text-align: center;
+    padding: 80px;
+}
+
+.welcome hr {
+    height: 3px;
+    background-color: white;
+    width: 40%;
+    border-radius: 10px;
+}
+
+#gogo {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    border : 2pt solid white ;
+}
+
+#gogo:hover {
+    background-color: teal;
+}
+
+.webinar {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.webinar hr, .daftar hr {
+    height: 3px;
+    background-color: black;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.daftar {
+    margin: 70px 25% auto;
+}
+
+.pdftn {
+    text-align: center;
+}
+
+table {
+    margin: 30px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+
+th{
+    border: 1px solid black;
+    padding: 20px;
+    background-color: #04AA6D;
+    color: white;
+}
+
+td{
+    border: 1px solid black;
+    padding: 20px;
+}
+
+td:nth-child(3){
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(245, 245, 245);
+}
+
+tr:hover {
+    background-color: teal;
+    color: white;
+}
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[type=text], input[type=number], input[type=email]{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 10px auto;
+    padding: 12px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+input[type=submit] {
+    width: 107%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 10px auto;
+    padding: 12px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    background-color: #04AA6D;
+    color: white;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(16, 206, 133);
+    color: black;
+}
+
+#Edit {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    border : 2pt solid white;
+}
+
+#Delete {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(136, 4, 4);
+    border : 2pt solid white;
+}
+
+#Edit:hover, #Delete:hover {
+    background-color: teal;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 20px auto;
+}
+
+
+
