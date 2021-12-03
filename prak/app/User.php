@@ -3,7 +3,7 @@ require_once('db/Koneksi.php');
 
 class User
 {
-    var $BASE_URL = "/S5/mggu8/prak";
+    var $BASE_URL = "/prak";
     public function __construct()
     {
         $db = new Koneksi();
